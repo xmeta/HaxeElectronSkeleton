@@ -1,0 +1,26 @@
+= Haxe Electron Skeleton
+
+== Get started
+. `git clone https://github.com/xmeta/HaxeElectronSkeleton.git`
+. `cd HaxeElectronSkeleton`
+. haxelib install
++
+----
+$ haxelib setup
+Path : ./lib
+
+$ haxelib install electron
+----
+
+== Build
+`haxe build.hxml`
+
+== Run
+`haxe run.hxml`
+
+== License
+* image:https://img.shields.io/badge/license-MIT-blue.svg[MIT License,link="http://www.opensource.org/licenses/MIT"]
+
+== Author
+
+* xmeta https://github.com/xmeta[github]

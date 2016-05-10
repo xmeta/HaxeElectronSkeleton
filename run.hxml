@@ -1,0 +1,3 @@
+-cmd cd target
+-cmd npm install
+-cmd npm start

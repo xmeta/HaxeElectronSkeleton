@@ -1,0 +1,22 @@
+-cp src
+-lib electron
+-lib hxnodejs
+-lib npm
+--each
+
+--next
+-js target/main.js
+-main Main
+
+--next
+-js target/app.js
+-main App
+
+
+--next
+-cmd cp src/app.html target/app.html
+-cmd cp src/package.json target/package.json
+
+--next
+-cmd cd target
+-cmd npm install

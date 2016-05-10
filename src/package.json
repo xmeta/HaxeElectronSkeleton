@@ -1,0 +1,11 @@
+{
+    "name": "demo",
+    "version": "0.0.1",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron main.js"
+    },
+    "devDependencies": {
+        "electron-prebuilt": "^0.37.0"
+    }
+}
