@@ -1,0 +1,2 @@
+-cmd electron-packager target\debug --out target\release --overwrite --prune --asar --platform=darwin --arch=x64 --version=0.37.8
+# --icon=assets/epp.ico

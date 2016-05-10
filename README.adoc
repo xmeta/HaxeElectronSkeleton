@@ -11,6 +11,7 @@ Path : ./lib
 
 $ haxelib install electron
 ----
+. `npm install -g electron-prebuilt electron-packager`
 
 == Build
 `haxe build.hxml`
@@ -19,8 +20,18 @@ $ haxelib install electron
 `haxe run.hxml`
 
 == Release Build
-. `npm install -g asar`
-. `asar pack target/debug ./target/release/app.asar`
+
+.Windows
+`haxe release_build_win.hxml`
+
+.OS X
+`haxe release_build_osx.hxml`
+
+[NOTE]
+====
+If you see a message that `Cannot create symlinks; skipping darwin platform`,
+try running as administrator on Windows.
+====
 
 == License
 * image:https://img.shields.io/badge/license-MIT-blue.svg[MIT License,link="http://www.opensource.org/licenses/MIT"]
