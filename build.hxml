@@ -5,18 +5,18 @@
 --each
 
 --next
--js target/main.js
+-js target/debug/main.js
 -main Main
 
 --next
--js target/app.js
+-js target/debug/app.js
 -main App
 
 
 --next
--cmd cp src/app.html target/app.html
--cmd cp src/package.json target/package.json
+-cmd cp src/app.html target/debug/app.html
+-cmd cp src/package.json target/debug/package.json
 
 --next
--cmd cd target
+-cmd cd target/debug
 -cmd npm install

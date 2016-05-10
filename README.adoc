@@ -18,6 +18,10 @@ $ haxelib install electron
 == Run
 `haxe run.hxml`
 
+== Release Build
+. `npm install -g asar`
+. `asar pack target/debug ./target/release/app.asar`
+
 == License
 * image:https://img.shields.io/badge/license-MIT-blue.svg[MIT License,link="http://www.opensource.org/licenses/MIT"]
 
