@@ -1,3 +1,1 @@
--cmd cd target/debug
--cmd npm install
--cmd npm start
+-cmd electron target/debug/main.js
