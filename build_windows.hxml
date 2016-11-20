@@ -13,8 +13,8 @@
 -main App
 
 --next
--cmd cp src/app.html target/debug/app.html
--cmd cp src/package.json target/debug/package.json
+-cmd xcopy src\app.html target\debug\ /I /Y
+-cmd xcopy src\package.json target\debug\ /I /Y
 
 --next
 -cmd cd target/debug

@@ -1,0 +1,53 @@
+#automatically generated do not edit
+#@date Sun May 29 2016 21:44:08 GMT+0900 (æ±äº¬ (æ¨æºæ))
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\src\
+#@begin-cache -lib npm
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\lib\npm\0,4,0\src\
+-D npm=0.4.0
+#@end-cache
+#@begin-cache -lib hxnodejs
+-D nodejs
+--macro allowPackage('sys')
+--macro _hxnodejs.VersionWarning.include()
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\lib\hxnodejs\4,0,8\src\
+-D hxnodejs=4.0.8
+#@end-cache
+#@begin-cache -lib electron
+
+
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\lib\electron\0,1,1\src\
+-D electron=0.1.1
+-D nodejs
+--macro allowPackage('sys')
+--macro _hxnodejs.VersionWarning.include()
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\lib\hxnodejs\4,0,8\src\
+-D hxnodejs=4.0.8
+-cp g:\google drive\workspace\haxe\haxeelectronskeleton\lib\npm\0,4,0\src\
+-D npm=0.4.0
+#@end-cache
+-cp c:\users\yotsum~1\appdata\local\temp\0977ac365f98af0a6d43f71cc6b79b40f46e735d
+--each
+
+
+
+--next
+-js target/debug/main.js
+-main Main
+
+
+--next
+-js target/debug/app.js
+-main App
+
+
+
+
+--next
+-cmd cp src/app.html target/debug/app.html
+-cmd cp src/package.json target/debug/package.json
+
+
+--next
+-cmd cd target/debug
+-cmd npm install
+
